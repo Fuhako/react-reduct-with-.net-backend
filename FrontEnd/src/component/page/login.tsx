@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import styles from '../styles/login.module.css'; // Import CSS module
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { login } from '../../state/counter/counterSlice';
+
 
 
 // Schema validasi Yup
