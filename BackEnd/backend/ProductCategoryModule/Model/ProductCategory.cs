@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.ProductCategoryModule.Model
 {
-    public class ProductCategoryModel
+    [Table("m_product_category")]
+    public class ProductCategory
     {
         [Key]
         public long id { get; set; }
