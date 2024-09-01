@@ -1,18 +1,22 @@
 # .NET Core Build Artifacts
-artifacts/
 bin/
 obj/
 Debug/
 DebugPublic/
 Release/
 
-# Debug and other build-specific files
+# Debug and build-specific files
 *.pdb
+*.obj
 *.log
 
-# FileContentIndex and related files
-FileContentIndex/
-*.sqlite
+# Visual Studio files
+.vs/
+.vs/backup/
+.vs/solution/PrivateSettings.config
+
+# FileContentIndex
+.vs/backend/FileContentIndex/
 
 # NuGet Packages
 *.nupkg
@@ -29,7 +33,6 @@ NuGet.Config
 *.suo
 *.user
 *.userosscache
-*.suo
 *.sw?
 
 # OS-specific files
@@ -39,13 +42,6 @@ Thumbs.db
 # Node modules (if applicable)
 node_modules/
 npm-debug.log
-
-# JetBrains Rider
-.idea/
-
-# Web files
-*.js.map
-*.css.map
 
 # Coverage
 coverage/
