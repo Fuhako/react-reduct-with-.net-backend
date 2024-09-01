@@ -15,7 +15,7 @@ namespace backend.ProductModule.Controller
             _productRepository = productRepository;
         }
 
-        [Route("api/GetProduct")]
+        [Route("api/[controller]/GetProduct")]
         [HttpGet]
         public IActionResult GetProduct()
         {
@@ -28,7 +28,7 @@ namespace backend.ProductModule.Controller
             return Ok(result);
         }
 
-        [Route("api/GetProductById")]
+        [Route("api/[controller]/GetProductById")]
         [HttpGet]
         public IActionResult GetProductById(int id)
         {
@@ -41,7 +41,7 @@ namespace backend.ProductModule.Controller
             return Ok(result);
         }
 
-        [Route("api/CreateProduct")]
+        [Route("api/[controller]/CreateProduct")]
         [HttpPost]
         public IActionResult CreateProduct(Product product, string user)
         {
@@ -59,7 +59,7 @@ namespace backend.ProductModule.Controller
             return Ok(result);
         }
 
-        [Route("api/UpdateProductById")]
+        [Route("api/[controller]/UpdateProductById")]
         [HttpPut]
         public IActionResult UpdateProductById(Product product, string user)
         {
@@ -77,7 +77,7 @@ namespace backend.ProductModule.Controller
             return Ok(result);
         }
 
-        [Route("api/DeleteProductById")]
+        [Route("api/[controller]/DeleteProductById")]
         [HttpDelete]
         public IActionResult DeleteProductById(long id)
         {

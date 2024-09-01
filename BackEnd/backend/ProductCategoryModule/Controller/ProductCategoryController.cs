@@ -15,7 +15,7 @@ namespace backend.ProductCategoryModule.Controller
             _ProductCategoryRepository = ProductCategoryRepository;
         }
 
-        [Route("api/GetProductCategory")]
+        [Route("api/[controller]/GetProductCategory")]
         [HttpGet]
         public IActionResult GetProductCategory()
         {
@@ -28,7 +28,7 @@ namespace backend.ProductCategoryModule.Controller
             return Ok(result);
         }
 
-        [Route("api/GetProductCategoryById")]
+        [Route("api/[controller]/GetProductCategoryById")]
         [HttpGet]
         public IActionResult GetProductCategoryById(int id)
         {
@@ -41,7 +41,7 @@ namespace backend.ProductCategoryModule.Controller
             return Ok(result);
         }
 
-        [Route("api/CreateProductCategory")]
+        [Route("api/[controller]/CreateProductCategory")]
         [HttpPost]
         public IActionResult CreateProductCategory(ProductCategory ProductCategory, string user)
         {
@@ -59,7 +59,7 @@ namespace backend.ProductCategoryModule.Controller
             return Ok(result);
         }
 
-        [Route("api/UpdateProductCategoryById")]
+        [Route("api/[controller]/UpdateProductCategoryById")]
         [HttpPut]
         public IActionResult UpdateProductCategoryById(ProductCategory ProductCategory, string user)
         {
@@ -77,7 +77,7 @@ namespace backend.ProductCategoryModule.Controller
             return Ok(result);
         }
 
-        [Route("api/DeleteProductCategoryById")]
+        [Route("api/[controller]/DeleteProductCategoryById")]
         [HttpDelete]
         public IActionResult DeleteProductCategoryById(long id)
         {
