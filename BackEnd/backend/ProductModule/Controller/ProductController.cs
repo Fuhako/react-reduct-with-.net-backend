@@ -60,7 +60,7 @@ namespace backend.ProductModule.Controller
         }
 
         [Route("api/UpdateProductById")]
-        [HttpPost]
+        [HttpPut]
         public IActionResult UpdateProductById(Product product, string user)
         {
             if (product == null)

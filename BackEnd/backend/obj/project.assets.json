@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\back-end\\backend\\backend\\backend.csproj",
+      "projectUniqueName": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\back-end\\backend\\backend\\backend.csproj",
+      "projectPath": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\Gilang Aji Setiawan\\.nuget\\packages\\",
-      "outputPath": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\back-end\\backend\\backend\\obj\\",
+      "outputPath": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
