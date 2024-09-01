@@ -33,11 +33,11 @@ namespace backend.ProductModule.Repository
                 _context.Products.Add(product);
                 _context.SaveChanges(); 
 
-                return "Create Product Success!";
+                return "Insert Product Success!";
             }
             catch (Exception ex)
             {
-                return $"Create Product Failed with Error :{ex.InnerException}"; // Failure
+                return $"Insert Product Failed with Error :{ex.InnerException}"; // Failure
             }
         }
 
