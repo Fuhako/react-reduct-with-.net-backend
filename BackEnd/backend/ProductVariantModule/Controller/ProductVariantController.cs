@@ -15,7 +15,7 @@ namespace backend.ProductVariantModule.Controller
             _ProductVariantRepository = ProductVariantRepository;
         }
 
-        [Route("api/GetProductVariant")]
+        [Route("api/[controller]/GetProductVariant")]
         [HttpGet]
         public IActionResult GetProductVariant()
         {
@@ -28,7 +28,7 @@ namespace backend.ProductVariantModule.Controller
             return Ok(result);
         }
 
-        [Route("api/GetProductVariantById")]
+        [Route("api/[controller]/GetProductVariantById")]
         [HttpGet]
         public IActionResult GetProductVariantById(int id)
         {
@@ -41,7 +41,7 @@ namespace backend.ProductVariantModule.Controller
             return Ok(result);
         }
 
-        [Route("api/CreateProductVariant")]
+        [Route("api/[controller]/CreateProductVariant")]
         [HttpPost]
         public IActionResult CreateProductVariant(ProductVariant ProductVariant, string user)
         {
@@ -59,7 +59,7 @@ namespace backend.ProductVariantModule.Controller
             return Ok(result);
         }
 
-        [Route("api/UpdateProductVariantById")]
+        [Route("api/[controller]/UpdateProductVariantById")]
         [HttpPut]
         public IActionResult UpdateProductVariantById(ProductVariant ProductVariant, string user)
         {
@@ -77,7 +77,7 @@ namespace backend.ProductVariantModule.Controller
             return Ok(result);
         }
 
-        [Route("api/DeleteProductVariantById")]
+        [Route("api/[controller]/DeleteProductVariantById")]
         [HttpDelete]
         public IActionResult DeleteProductVariantById(long id)
         {
