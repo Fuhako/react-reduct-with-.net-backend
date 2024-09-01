@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.ProductVariantModule.Model
 {
-    public class ProductVariantModel
+    [Table("m_product_variant")]
+    public class ProductVariant
     {
         [Key]
         public long id { get; set; }
