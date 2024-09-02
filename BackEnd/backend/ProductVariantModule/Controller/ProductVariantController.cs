@@ -43,14 +43,14 @@ namespace backend.ProductVariantModule.Controller
 
         [Route("api/[controller]/CreateProductVariant")]
         [HttpPost]
-        public IActionResult CreateProductVariant(ProductVariant ProductVariant, string user)
+        public IActionResult CreateProductVariant(ProductVariant ProductVariant)
         {
             if (ProductVariant == null)
             {
                 return BadRequest("ProductVariant cannot be null");
             }
 
-            var result = _ProductVariantRepository.CreateProductVariant(ProductVariant, user);
+            var result = _ProductVariantRepository.CreateProductVariant(ProductVariant, ProductVariant.created_user);
             if (result == null)
             {
                 return NotFound("Create ProductVariant Failed!");
@@ -61,14 +61,14 @@ namespace backend.ProductVariantModule.Controller
 
         [Route("api/[controller]/UpdateProductVariantById")]
         [HttpPut]
-        public IActionResult UpdateProductVariantById(ProductVariant ProductVariant, string user)
+        public IActionResult UpdateProductVariantById(ProductVariant ProductVariant)
         {
             if (ProductVariant == null)
             {
                 return BadRequest("ProductVariant cannot be null");
             }
 
-            var result = _ProductVariantRepository.UpdateProductVariantById(ProductVariant, user);
+            var result = _ProductVariantRepository.UpdateProductVariantById(ProductVariant, ProductVariant.created_user);
             if (result == null)
             {
                 return NotFound("Update ProductVariant Failed!");
@@ -79,7 +79,7 @@ namespace backend.ProductVariantModule.Controller
 
         [Route("api/[controller]/DeleteProductVariantById")]
         [HttpDelete]
-        public IActionResult DeleteProductVariantById(long id)
+        public IActionResult DeleteProductVariantById([FromQuery] long id)
         {
             if (id == 0)
             {

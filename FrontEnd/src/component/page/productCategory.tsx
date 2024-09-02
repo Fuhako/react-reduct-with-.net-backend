@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "../../state/store";
 import {
-    fetchProducts,
-    addProduct,
-    updateProduct,
-    deleteProduct,
-    toggleActive
+    fetchProductCategory,
+    addProductCategory,
+    updateProductCategory,
+    deleteProductCategory,
+    toggleActiveCategory
 } from "../../state/counter/counterSlice";
 import {
     Container,
@@ -27,56 +27,53 @@ import {
     Switch
 } from "@mui/material";
 import { useFormik } from "formik";
-import { Product } from "../../state/counter/counterSlice";
-import LoadingPage from "../page/loading"; // Import komponen LoadingPage
+import { ProductCategory, login } from "../../state/counter/counterSlice";
+import LoadingPage from "./loading"; // Import LoadingPage component
 
-
-const ProductComponent: React.FC = () => {
+const ProductCategoryComponent: React.FC = () => {
     const dispatch: AppDispatch = useDispatch();
-    const { products, isLoading, error } = useSelector((state: RootState) => state.products);
+    const { productCategory, isLoading, error } = useSelector((state: RootState) => state.productCategory);
 
-    const [open, setOpen] = useState(false);
-    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+    const [open, setOpen] = useState<boolean>(false);
+    const [selectedProductCategory, setSelectedProductCategory] = useState<ProductCategory | null>(null);
     const userId = useSelector((state: RootState) => state.login.name);
 
     useEffect(() => {
-        dispatch(fetchProducts());
+        dispatch(fetchProductCategory());
     }, [dispatch]);
 
     const formik = useFormik({
         initialValues: {
             id: 0,
-            plu: '',
-            product_category_id: 0,
+            name: '',
             active: true,
             created_user: ''
         },
         onSubmit: async (values) => {
-            var payload = {
+            const payloadCategory: ProductCategory = {
                 id: values.id,
-                plu: values.plu,
-                product_category_id: values.product_category_id,
+                name: values.name,
                 active: values.active,
                 created_user: userId
             };
             try {
-                if (selectedProduct) {
-                    await dispatch(updateProduct(payload)).unwrap();
+                if (selectedProductCategory) {
+                    await dispatch(updateProductCategory(payloadCategory)).unwrap();
                 } else {
-                    await dispatch(addProduct(payload)).unwrap();
+                    await dispatch(addProductCategory(payloadCategory)).unwrap();
                 }
-                dispatch(fetchProducts());
+                dispatch(fetchProductCategory());
                 handleClose();
             } catch (error) {
-                console.error("Failed to save product:", error);
+                console.error("Failed to save ProductCategory:", error);
             }
         },
     });
 
-    const handleOpen = (product: Product | null = null) => {
-        setSelectedProduct(product);
-        if (product) {
-            formik.setValues(product);
+    const handleOpen = (productCategory: ProductCategory | null = null) => {
+        setSelectedProductCategory(productCategory);
+        if (productCategory) {
+            formik.setValues(productCategory);
         } else {
             formik.resetForm();
         }
@@ -85,12 +82,12 @@ const ProductComponent: React.FC = () => {
 
     const handleClose = () => {
         setOpen(false);
-        setSelectedProduct(null);
+        setSelectedProductCategory(null);
         formik.resetForm();
     };
 
-    const handleToggleActive = (productId: number) => {
-        dispatch(toggleActive(productId));
+    const handleToggleActiveCategory = (categoryId: number) => {
+        dispatch(toggleActiveCategory(categoryId));
     };
 
     return (
@@ -98,10 +95,10 @@ const ProductComponent: React.FC = () => {
             {isLoading && <LoadingPage />}
 
             <Typography variant="h4" gutterBottom>
-                Product List
+                Product Category List
             </Typography>
             <Button variant="contained" color="primary" onClick={() => handleOpen()}>
-                Add Product
+                Add Product Category
             </Button>
             <Paper elevation={3} style={{ marginTop: "16px" }}>
                 <TableContainer component={Paper}>
@@ -109,31 +106,29 @@ const ProductComponent: React.FC = () => {
                         <TableHead>
                             <TableRow>
                                 <TableCell>ID</TableCell>
-                                <TableCell>PLU</TableCell>
-                                <TableCell>Category ID</TableCell>
+                                <TableCell>Name</TableCell>
                                 <TableCell>Active</TableCell>
                                 <TableCell>Actions</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {products.map((product) => (
-                                <TableRow key={product.id}>
-                                    <TableCell>{product.id}</TableCell>
-                                    <TableCell>{product.plu}</TableCell>
-                                    <TableCell>{product.product_category_id}</TableCell>
-                                    <TableCell>{product.active ? 'Yes' : 'No'}</TableCell>
+                            {productCategory.map((category) => (
+                                <TableRow key={category.id}>
+                                    <TableCell>{category.id}</TableCell>
+                                    <TableCell>{category.name}</TableCell>
+                                    <TableCell>{category.active ? 'Yes' : 'No'}</TableCell>
                                     <TableCell>
                                         <Button
                                             variant="outlined"
                                             color="primary"
-                                            onClick={() => handleOpen(product)}
+                                            onClick={() => handleOpen(category)}
                                         >
                                             Edit
                                         </Button>
                                         <Button
                                             variant="outlined"
                                             color="secondary"
-                                            onClick={() => dispatch(deleteProduct(product.id))}
+                                            onClick={() => dispatch(deleteProductCategory(category.id))}
                                             style={{ marginLeft: 8 }}
                                         >
                                             Delete
@@ -147,24 +142,16 @@ const ProductComponent: React.FC = () => {
             </Paper>
 
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>{selectedProduct ? "Edit Product" : "Add Product"}</DialogTitle>
+                <DialogTitle>{selectedProductCategory ? "Edit ProductCategory" : "Add ProductCategory"}</DialogTitle>
                 <form onSubmit={formik.handleSubmit}>
                     <DialogContent>
                         <TextField
                             margin="dense"
-                            id="plu"
-                            label="PLU"
+                            id="name"
+                            label="Name"
                             type="text"
                             fullWidth
-                            {...formik.getFieldProps('plu')}
-                        />
-                        <TextField
-                            margin="dense"
-                            id="product_category_id"
-                            label="Category ID"
-                            type="number"
-                            fullWidth
-                            {...formik.getFieldProps('product_category_id')}
+                            {...formik.getFieldProps('name')}
                         />
                         <Switch
                             checked={formik.values.active}
@@ -178,7 +165,7 @@ const ProductComponent: React.FC = () => {
                             Cancel
                         </Button>
                         <Button type="submit" color="primary">
-                            {selectedProduct ? "Update" : "Add"}
+                            {selectedProductCategory ? "Update" : "Add"}
                         </Button>
                     </DialogActions>
                 </form>
@@ -187,4 +174,4 @@ const ProductComponent: React.FC = () => {
     );
 };
 
-export default ProductComponent;
+export default ProductCategoryComponent;

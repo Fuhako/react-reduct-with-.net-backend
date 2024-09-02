@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState, AppDispatch } from "../../state/store";
 import {
-    fetchProducts,
-    addProduct,
-    updateProduct,
-    deleteProduct,
-    toggleActive
+    fetchProductVariant,
+    addProductVariant,
+    updateProductVariant,
+    deleteProductVariant,
+    toggleActiveVariant
 } from "../../state/counter/counterSlice";
 import {
     Container,
@@ -27,56 +27,61 @@ import {
     Switch
 } from "@mui/material";
 import { useFormik } from "formik";
-import { Product } from "../../state/counter/counterSlice";
-import LoadingPage from "../page/loading"; // Import komponen LoadingPage
+import { ProductVariant, login } from "../../state/counter/counterSlice";
+import LoadingPage from "./loading"; // Import LoadingPage component
 
-
-const ProductComponent: React.FC = () => {
+const ProductVariantComponent: React.FC = () => {
     const dispatch: AppDispatch = useDispatch();
-    const { products, isLoading, error } = useSelector((state: RootState) => state.products);
+    const { productVariant, isLoading, error } = useSelector((state: RootState) => state.productVariant);
 
-    const [open, setOpen] = useState(false);
-    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+    const [open, setOpen] = useState<boolean>(false);
+    const [selectedProductVariant, setSelectedProductVariant] = useState<ProductVariant | null>(null);
     const userId = useSelector((state: RootState) => state.login.name);
 
     useEffect(() => {
-        dispatch(fetchProducts());
+        dispatch(fetchProductVariant());
     }, [dispatch]);
 
     const formik = useFormik({
         initialValues: {
             id: 0,
-            plu: '',
-            product_category_id: 0,
+            product_id: 0,
+            code: '',
+            name: '',
+            qty: 0,
+            price: 0,
             active: true,
             created_user: ''
         },
         onSubmit: async (values) => {
-            var payload = {
+            const payloadVariant: ProductVariant = {
                 id: values.id,
-                plu: values.plu,
-                product_category_id: values.product_category_id,
+                product_id: values.product_id,
+                code: values.code,
+                name: values.name,
+                qty: values.qty,
+                price: values.price,
                 active: values.active,
                 created_user: userId
             };
             try {
-                if (selectedProduct) {
-                    await dispatch(updateProduct(payload)).unwrap();
+                if (selectedProductVariant) {
+                    await dispatch(updateProductVariant(payloadVariant)).unwrap();
                 } else {
-                    await dispatch(addProduct(payload)).unwrap();
+                    await dispatch(addProductVariant(payloadVariant)).unwrap();
                 }
-                dispatch(fetchProducts());
+                dispatch(fetchProductVariant());
                 handleClose();
             } catch (error) {
-                console.error("Failed to save product:", error);
+                console.error("Failed to save ProductVariant:", error);
             }
         },
     });
 
-    const handleOpen = (product: Product | null = null) => {
-        setSelectedProduct(product);
-        if (product) {
-            formik.setValues(product);
+    const handleOpen = (productVariant: ProductVariant | null = null) => {
+        setSelectedProductVariant(productVariant);
+        if (productVariant) {
+            formik.setValues(productVariant);
         } else {
             formik.resetForm();
         }
@@ -85,12 +90,12 @@ const ProductComponent: React.FC = () => {
 
     const handleClose = () => {
         setOpen(false);
-        setSelectedProduct(null);
+        setSelectedProductVariant(null);
         formik.resetForm();
     };
 
-    const handleToggleActive = (productId: number) => {
-        dispatch(toggleActive(productId));
+    const handleToggleActiveVariant = (VariantId: number) => {
+        dispatch(toggleActiveVariant(VariantId));
     };
 
     return (
@@ -98,10 +103,10 @@ const ProductComponent: React.FC = () => {
             {isLoading && <LoadingPage />}
 
             <Typography variant="h4" gutterBottom>
-                Product List
+                Product Variant List
             </Typography>
             <Button variant="contained" color="primary" onClick={() => handleOpen()}>
-                Add Product
+                Add Product Variant
             </Button>
             <Paper elevation={3} style={{ marginTop: "16px" }}>
                 <TableContainer component={Paper}>
@@ -109,31 +114,29 @@ const ProductComponent: React.FC = () => {
                         <TableHead>
                             <TableRow>
                                 <TableCell>ID</TableCell>
-                                <TableCell>PLU</TableCell>
-                                <TableCell>Category ID</TableCell>
+                                <TableCell>Name</TableCell>
                                 <TableCell>Active</TableCell>
                                 <TableCell>Actions</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {products.map((product) => (
-                                <TableRow key={product.id}>
-                                    <TableCell>{product.id}</TableCell>
-                                    <TableCell>{product.plu}</TableCell>
-                                    <TableCell>{product.product_category_id}</TableCell>
-                                    <TableCell>{product.active ? 'Yes' : 'No'}</TableCell>
+                            {productVariant.map((Variant) => (
+                                <TableRow key={Variant.id}>
+                                    <TableCell>{Variant.id}</TableCell>
+                                    <TableCell>{Variant.name}</TableCell>
+                                    <TableCell>{Variant.active ? 'Yes' : 'No'}</TableCell>
                                     <TableCell>
                                         <Button
                                             variant="outlined"
                                             color="primary"
-                                            onClick={() => handleOpen(product)}
+                                            onClick={() => handleOpen(Variant)}
                                         >
                                             Edit
                                         </Button>
                                         <Button
                                             variant="outlined"
                                             color="secondary"
-                                            onClick={() => dispatch(deleteProduct(product.id))}
+                                            onClick={() => dispatch(deleteProductVariant(Variant.id))}
                                             style={{ marginLeft: 8 }}
                                         >
                                             Delete
@@ -147,24 +150,16 @@ const ProductComponent: React.FC = () => {
             </Paper>
 
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>{selectedProduct ? "Edit Product" : "Add Product"}</DialogTitle>
+                <DialogTitle>{selectedProductVariant ? "Edit ProductVariant" : "Add ProductVariant"}</DialogTitle>
                 <form onSubmit={formik.handleSubmit}>
                     <DialogContent>
                         <TextField
                             margin="dense"
-                            id="plu"
-                            label="PLU"
+                            id="name"
+                            label="Name"
                             type="text"
                             fullWidth
-                            {...formik.getFieldProps('plu')}
-                        />
-                        <TextField
-                            margin="dense"
-                            id="product_category_id"
-                            label="Category ID"
-                            type="number"
-                            fullWidth
-                            {...formik.getFieldProps('product_category_id')}
+                            {...formik.getFieldProps('name')}
                         />
                         <Switch
                             checked={formik.values.active}
@@ -178,7 +173,7 @@ const ProductComponent: React.FC = () => {
                             Cancel
                         </Button>
                         <Button type="submit" color="primary">
-                            {selectedProduct ? "Update" : "Add"}
+                            {selectedProductVariant ? "Update" : "Add"}
                         </Button>
                     </DialogActions>
                 </form>
@@ -187,4 +182,4 @@ const ProductComponent: React.FC = () => {
     );
 };
 
-export default ProductComponent;
+export default ProductVariantComponent;
