@@ -3,8 +3,11 @@ import styles from '../styles/login.module.css'; // Import CSS module
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import { useDispatch } from "react-redux";
-import { login, setAutenticated } from "../../state/counter/counterSlice"; // Pastikan jalur ini benar
+import { useDispatch, useSelector } from "react-redux";
+import { login, setAutenticated, startLoading, stopLoading } from "../../state/counter/counterSlice"; // Pastikan jalur ini benar
+import LoadingPage from "../page/loading"; // Import komponen LoadingPage
+import { RootState } from "../../state/store";
+
 
 // Schema validasi Yup
 const validationSchema = Yup.object({
@@ -18,6 +21,7 @@ const validationSchema = Yup.object({
 
 const Login = () => {
     const dispatch = useDispatch(); // Inisialisasi useDispatch
+    const isLoading = useSelector((state: RootState) => state.loading.isLoading); // Ambil state loading dari Redux
 
     const formik = useFormik({
         initialValues: {
@@ -26,6 +30,7 @@ const Login = () => {
         },
         validationSchema: validationSchema,
         onSubmit: async (values) => {
+            dispatch(startLoading()); // Mulai loading
             try {
                 const response = await axios.post("https://localhost:7073/api/Auth/Login", {
                     email: values.email,
@@ -56,12 +61,15 @@ const Login = () => {
             } catch (ex) {
                 console.log("Login failed", ex);
                 // Handle login failure
+            } finally {
+                dispatch(stopLoading()); // Selesai loading
             }
         },
     });
 
     return (
         <div className={styles.container}>
+            {isLoading && <LoadingPage />} {/* Tampilkan loading jika isLoading true */}
             <form onSubmit={formik.handleSubmit} className={styles.form}>
                 <h2>Login</h2>
                 <div className={styles.inputGroup}>

@@ -5,6 +5,9 @@ export const store = configureStore({
     reducer: {
         login: counterReducer,
         products: counterReducer,
+        loading: counterReducer,
+        productCategory: counterReducer,
+        productVariant: counterReducer
     },
 });
 

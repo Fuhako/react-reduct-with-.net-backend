@@ -43,14 +43,14 @@ namespace backend.ProductCategoryModule.Controller
 
         [Route("api/[controller]/CreateProductCategory")]
         [HttpPost]
-        public IActionResult CreateProductCategory(ProductCategory ProductCategory, string user)
+        public IActionResult CreateProductCategory(ProductCategory ProductCategory)
         {
             if (ProductCategory == null)
             {
                 return BadRequest("ProductCategory cannot be null");
             }
 
-            var result = _ProductCategoryRepository.CreateProductCategory(ProductCategory, user);
+            var result = _ProductCategoryRepository.CreateProductCategory(ProductCategory, ProductCategory.created_user);
             if (result == null)
             {
                 return NotFound("Create ProductCategory Failed!");
@@ -61,14 +61,14 @@ namespace backend.ProductCategoryModule.Controller
 
         [Route("api/[controller]/UpdateProductCategoryById")]
         [HttpPut]
-        public IActionResult UpdateProductCategoryById(ProductCategory ProductCategory, string user)
+        public IActionResult UpdateProductCategoryById(ProductCategory ProductCategory)
         {
             if (ProductCategory == null)
             {
                 return BadRequest("ProductCategory cannot be null");
             }
 
-            var result = _ProductCategoryRepository.UpdateProductCategoryById(ProductCategory, user);
+            var result = _ProductCategoryRepository.UpdateProductCategoryById(ProductCategory, ProductCategory.created_user);
             if (result == null)
             {
                 return NotFound("Update ProductCategory Failed!");
@@ -79,7 +79,7 @@ namespace backend.ProductCategoryModule.Controller
 
         [Route("api/[controller]/DeleteProductCategoryById")]
         [HttpDelete]
-        public IActionResult DeleteProductCategoryById(long id)
+        public IActionResult DeleteProductCategoryById([FromQuery] long id)
         {
             if (id == 0)
             {

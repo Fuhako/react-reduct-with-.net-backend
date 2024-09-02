@@ -61,25 +61,25 @@ namespace backend.ProductModule.Controller
 
         [Route("api/[controller]/UpdateProductById")]
         [HttpPut]
-        public IActionResult UpdateProductById(Product product, string user)
+        public IActionResult UpdateProductById(Product product)
         {
             if (product == null)
             {
                 return BadRequest("Product cannot be null");
             }
 
-            var result = _productRepository.UpdateProductById(product, user);
+            var result = _productRepository.UpdateProductById(product, product.created_user);
             if (result == null)
             {
                 return NotFound("Update Product Failed!");
             }
-
+                
             return Ok(result);
         }
 
         [Route("api/[controller]/DeleteProductById")]
         [HttpDelete]
-        public IActionResult DeleteProductById(long id)
+        public IActionResult DeleteProductById([FromQuery] long id)
         {
             if (id == 0)
             {
