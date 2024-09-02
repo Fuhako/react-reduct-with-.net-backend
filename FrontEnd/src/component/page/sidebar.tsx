@@ -6,50 +6,44 @@ import HomeIcon from "@mui/icons-material/Home";
 import CategoryIcon from "@mui/icons-material/Category";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useMediaQuery, useTheme } from "@mui/material";
+import { useSelector } from "react-redux";
+import { RootState } from '../../state/store';
 
 const Sidebar: React.FC = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
     const [open, setOpen] = React.useState(false);
+
+    const menuAccess = useSelector((state: RootState) => state.login.menuAccessByRoleId);
 
     const handleDrawerToggle = () => {
         setOpen(!open);
     };
 
+    const menuItems = [
+        { id: 1, text: "Home", icon: <HomeIcon />, path: "/" },
+        { id: 2, text: "Products", icon: <CategoryIcon />, path: "/products" },
+        { id: 3, text: "Product Categories", icon: <CategoryIcon />, path: "/product-category" },
+        { id: 4, text: "Product Variants", icon: <CategoryIcon />, path: "/product-variant" },
+        { id: 5, text: "Profile", icon: <AccountCircleIcon />, path: "/profile" },
+    ];
+
+    const filteredMenuItems = menuItems.filter((item) =>
+        menuAccess.some((access) => access.menu_id === item.id && access.active)
+    );
+    console.log(menuAccess, 'filteredMenuItems');
+
     const drawer = (
         <div>
             <List>
-                <ListItem disablePadding>
-                    <ListItemButton component={Link} to="/">
-                        <ListItemIcon><HomeIcon /></ListItemIcon>
-                        <ListItemText primary="Home" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={Link} to="/products">
-                        <ListItemIcon><CategoryIcon /></ListItemIcon>
-                        <ListItemText primary="Products" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={Link} to="/product-category">
-                        <ListItemIcon><CategoryIcon /></ListItemIcon>
-                        <ListItemText primary="Product Categories" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={Link} to="/product-variant">
-                        <ListItemIcon><CategoryIcon /></ListItemIcon>
-                        <ListItemText primary="Product Variants" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={Link} to="/profile">
-                        <ListItemIcon><AccountCircleIcon /></ListItemIcon>
-                        <ListItemText primary="Profile" />
-                    </ListItemButton>
-                </ListItem>
+                {filteredMenuItems.map((item) => (
+                    <ListItem key={item.id} disablePadding>
+                        <ListItemButton component={Link} to={item.path}>
+                            <ListItemIcon>{item.icon}</ListItemIcon>
+                            <ListItemText primary={item.text} />
+                        </ListItemButton>
+                    </ListItem>
+                ))}
             </List>
             <Divider />
             {/* Add more items if needed */}

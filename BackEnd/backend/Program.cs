@@ -1,6 +1,8 @@
 using backend.AuthrModule.Model;
 using backend.Context;
 using backend.Helpers;
+using backend.MenuAccessModule.Repository;
+using backend.MenuModule.Repository;
 using backend.ProductCategoryModule.Repository;
 using backend.ProductModule.Repository;
 using backend.ProductVariantModule.Repository;
@@ -30,6 +32,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
 builder.Services.AddScoped<IProductVariantRepository, ProductVariantRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<IMenuAccessRepository, MenuAccessRepository>();
 
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
