@@ -117,3 +117,4 @@ const Register: React.FC = () => {
 };
 
 export default Register;
+0

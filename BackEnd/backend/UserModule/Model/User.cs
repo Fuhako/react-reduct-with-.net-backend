@@ -12,6 +12,7 @@ namespace backend.UserModule.Model
         public string user_id { get; set; } = "";
         public string password { get; set; } = "";
         public string email { get; set; } = "";
+        public int role_id { get; set; } = 0;
         public bool is_use { get; set; } = false;
         public bool is_lock { get; set; } = false;
         public DateTime last_login { get; set; }

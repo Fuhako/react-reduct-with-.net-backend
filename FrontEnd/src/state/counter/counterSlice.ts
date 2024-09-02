@@ -34,12 +34,33 @@ export interface User {
     // Tambahkan field lain jika diperlukan
 }
 
+export interface Menu {
+    id: number;
+    name: string;
+    active: boolean;
+    created_user: string;
+    // Tambahkan field lain jika diperlukan
+}
+
+export interface MenuAccess {
+    id: number;
+    menu_id: number;
+    menuname: string;
+    role_id: number;
+    active: boolean;
+    created_user: string;
+    // Tambahkan field lain jika diperlukan
+}
+
 interface CounterState {
     name: string;
+    roleid: number;
     isAutenticated: boolean;
     products: Product[];
     productCategory: ProductCategory[];
     productVariant: ProductVariant[];
+    menuAccess: MenuAccess[];
+    menuAccessByRoleId: MenuAccess[]; // Tambahkan properti menuAccessByRoleId
     isLoading: boolean;
     error: string | null;
     user: string | null; // Simpan token pengguna
@@ -47,10 +68,13 @@ interface CounterState {
 
 const initialState: CounterState = {
     name: "",
+    roleid: 0,
     isAutenticated: false,
     products: [],
     productCategory: [],
     productVariant: [],
+    menuAccess: [],
+    menuAccessByRoleId: [],
     isLoading: false,
     error: null,
     user: null,
@@ -69,11 +93,11 @@ const configureSlice = createSlice({
         stopLoading: (state) => {
             state.isLoading = false;
         },
-        login: (state, action: PayloadAction<{ name: string; token: string }>) => {
+        login: (state, action: PayloadAction<{ name: string; token: string; roleid: number }>) => {
             state.name = action.payload.name;
-            console.log(action.payload.name, 'name login');
             state.isAutenticated = true;
             state.user = action.payload.token; // Simpan token pengguna
+            state.roleid = action.payload.roleid;
         },
         logout: (state) => {
             state.name = '';
@@ -101,7 +125,7 @@ const configureSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder
-            // Products
+            //#region Products
             .addCase(fetchProducts.pending, (state) => {
                 state.isLoading = true;
             })
@@ -125,7 +149,9 @@ const configureSlice = createSlice({
             .addCase(deleteProduct.fulfilled, (state, action: PayloadAction<number>) => {
                 state.products = state.products.filter(p => p.id !== action.payload);
             })
-            // ProductCategory
+            //#endregion Products
+
+            //#region ProductCategory
             .addCase(fetchProductCategory.pending, (state) => {
                 state.isLoading = true;
             })
@@ -152,7 +178,23 @@ const configureSlice = createSlice({
             .addCase(fetchUser.rejected, (state, action) => {
                 state.isLoading = false;
                 state.error = action.error.message || 'Failed to fetch user';
-            });
+            })
+            //#endregion ProductCategory
+
+            //#region MenuAccess
+            .addCase(fetchMenuAccess.pending, (state) => {
+                state.isLoading = true;
+            })
+            .addCase(fetchMenuAccess.fulfilled, (state, action: PayloadAction<MenuAccess[]>) => {
+                state.isLoading = false;
+                state.menuAccess = action.payload;
+            })
+            .addCase(fetchMenuAccessByRoleId.fulfilled, (state, action: PayloadAction<MenuAccess[]>) => {
+                state.isLoading = false;
+                state.menuAccessByRoleId = action.payload;
+            })
+            //#endregion MenuAccess
+            ;
     },
 });
 
@@ -246,6 +288,20 @@ export const deleteProductVariant = createAsyncThunk('productVariant/deleteProdu
     return id;
 });
 //#endregion ProductVariant
+
+//#region MenuAccess
+export const fetchMenuAccess = createAsyncThunk('menuAccess/fetchMenuAccess', async () => {
+    const response = await axios.get<MenuAccess[]>('https://localhost:7073/api/MenuAccess/GetMenuAccess');
+    return response.data;
+});
+
+export const fetchMenuAccessByRoleId = createAsyncThunk('menuAccess/fetchMenuAccessByRoleId', async (roleId: number) => {
+    console.log(roleId, 'roleId in fetchMenuAccessByRoleId');
+    const response = await axios.get<MenuAccess[]>(`https://localhost:7073/api/MenuAccess/GetMenuAccessByRoleId?roleid=${roleId}`);
+    return response.data;
+});
+//#endregion MenuAccess
+
 export const { login, logout, setAutenticated, startLoading, stopLoading, toggleActive, toggleActiveCategory, toggleActiveVariant } = configureSlice.actions;
 
 export default configureSlice.reducer;

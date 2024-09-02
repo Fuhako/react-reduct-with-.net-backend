@@ -4,9 +4,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { login, setAutenticated, startLoading, stopLoading } from "../../state/counter/counterSlice"; // Pastikan jalur ini benar
+import { login, setAutenticated, startLoading, stopLoading, MenuAccess, fetchMenuAccessByRoleId } from "../../state/counter/counterSlice"; // Pastikan jalur ini benar
 import LoadingPage from "../page/loading"; // Import komponen LoadingPage
-import { RootState } from "../../state/store";
+import { RootState, AppDispatch } from "../../state/store";
 
 
 // Schema validasi Yup
@@ -19,8 +19,9 @@ const validationSchema = Yup.object({
         .required("Password is required"),
 });
 
-const Login = () => {
-    const dispatch = useDispatch(); // Inisialisasi useDispatch
+const Login: React.FC = () => {
+    const dispatch: AppDispatch = useDispatch();
+    const { menuAccessByRoleId } = useSelector((state: RootState) => state.menuAccessByRoleId);
     const isLoading = useSelector((state: RootState) => state.loading.isLoading); // Ambil state loading dari Redux
 
     const formik = useFormik({
@@ -52,9 +53,12 @@ const Login = () => {
                     });
 
                     if (result.status === 200) {
-                        alert("WELCOME");
-                        dispatch(login({ name: result.data.user_id, token })); // Update state Redux
+                        alert(`WELCOME ${result.data.user_id}`);
+                        let roleid = result.data.role_id;
+                        dispatch(login({ name: result.data.user_id, token, roleid: roleid })); // Update state Redux
                         dispatch(setAutenticated(true)); // Update status autentikasi
+                        dispatch(fetchMenuAccessByRoleId(roleid));
+
                     }
                 }
                 // Handle successful login, e.g., store token, redirect, etc.

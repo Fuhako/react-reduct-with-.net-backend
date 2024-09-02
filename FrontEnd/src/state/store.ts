@@ -7,7 +7,8 @@ export const store = configureStore({
         products: counterReducer,
         loading: counterReducer,
         productCategory: counterReducer,
-        productVariant: counterReducer
+        productVariant: counterReducer,
+        menuAccessByRoleId: counterReducer
     },
 });
 
