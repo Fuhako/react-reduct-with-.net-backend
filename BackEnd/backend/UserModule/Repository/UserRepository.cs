@@ -22,6 +22,11 @@ namespace backend.UserModule.Repository
             return _context.User.Where(a => a.id == id).FirstOrDefault();
         }
 
+        public User GetUserByEmail(string email)
+        {
+            return _context.User.Where(a => a.email == email).FirstOrDefault();
+        }
+
         public string CreateUser(User User, string userid)
         {
             try

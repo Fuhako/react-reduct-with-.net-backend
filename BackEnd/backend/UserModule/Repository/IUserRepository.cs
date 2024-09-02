@@ -8,6 +8,7 @@ namespace backend.UserModule.Repository
         List<User> GetUsers();
         User GetUserById(long id);
         User GetUserByUserId(string userid);
+        User GetUserByEmail(string email);
         string CreateUser(User User, string userid);
         string UpdateUserById(User User, string user);
         string DeleteUserById(long id);

@@ -43,14 +43,14 @@ namespace backend.ProductModule.Controller
 
         [Route("api/[controller]/CreateProduct")]
         [HttpPost]
-        public IActionResult CreateProduct(Product product, string user)
+        public IActionResult CreateProduct(Product product)
         {
             if (product == null)
             {
                 return BadRequest("Product cannot be null");
             }
 
-            var result = _productRepository.CreateProduct(product, user);
+            var result = _productRepository.CreateProduct(product, product.created_user);
             if (result == null)
             {
                 return NotFound("Create Product Failed!");

@@ -40,6 +40,19 @@ namespace backend.UserModule.Controller
 
             return Ok(result);
         }
+        
+        [Route("api/[controller]/GetUserEmail")]
+        [HttpGet]
+        public IActionResult GetUserByEmail(string email)
+        {
+            var result = _UserRepository.GetUserByEmail(email);
+            if(result == null)
+            {
+                return NotFound("User not found!");
+            }
+
+            return Ok(result);
+        }
 
         [Route("api/[controller]/GetUserByUserId")]
         [HttpGet]
