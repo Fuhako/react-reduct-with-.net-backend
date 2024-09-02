@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.UserModule.Model
@@ -13,6 +14,7 @@ namespace backend.UserModule.Model
         public string email { get; set; } = "";
         public bool is_use { get; set; } = false;
         public bool is_lock { get; set; } = false;
+        public DateTime last_login { get; set; }
         public bool active { get; set; } = true;
         public string created_user { get; set; } = "";
         public DateTime created_date { get; set; }

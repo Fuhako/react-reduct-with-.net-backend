@@ -6,7 +6,7 @@ import styles from '../styles/navbar.module.css'; // Import CSS module
 const Navbar = () => {
 
     const dispatch = useDispatch();
-    const { name, isAutenticated } = useSelector((state: RootState) => state.counter);
+    const { name, isAutenticated } = useSelector((state: RootState) => state.login);
 
     return (
         <nav className={styles.navbar}>

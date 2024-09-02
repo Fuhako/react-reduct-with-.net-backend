@@ -1,11 +1,10 @@
-
-import React, { useState } from "react";
+import React from "react";
 import styles from '../styles/login.module.css'; // Import CSS module
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { login } from '../../state/counter/counterSlice';
-
-
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { login, setAutenticated } from "../../state/counter/counterSlice"; // Pastikan jalur ini benar
 
 // Schema validasi Yup
 const validationSchema = Yup.object({
@@ -18,16 +17,46 @@ const validationSchema = Yup.object({
 });
 
 const Login = () => {
+    const dispatch = useDispatch(); // Inisialisasi useDispatch
+
     const formik = useFormik({
         initialValues: {
             email: "",
             password: "",
         },
         validationSchema: validationSchema,
-        onSubmit: (values) => {
-            console.log("Email:", values.email);
-            console.log("Password:", values.password);
-            // Implementasikan logika login di sini
+        onSubmit: async (values) => {
+            try {
+                const response = await axios.post("https://localhost:7073/api/Auth/Login", {
+                    email: values.email,
+                    password: values.password,
+                });
+
+                if (response.status === 200) {
+                    const token = response.data.data.token;
+                    console.log("Login successful:", response);
+                    console.log("Token:", token);
+
+                    // Simpan token di local storage
+                    localStorage.setItem('userToken', token);
+
+                    const result = await axios.get("https://localhost:7073/api/Auth/user", {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    });
+
+                    if (result.status === 200) {
+                        alert("WELCOME");
+                        dispatch(login({ name: result.data.user_id, token })); // Update state Redux
+                        dispatch(setAutenticated(true)); // Update status autentikasi
+                    }
+                }
+                // Handle successful login, e.g., store token, redirect, etc.
+            } catch (ex) {
+                console.log("Login failed", ex);
+                // Handle login failure
+            }
         },
     });
 
@@ -63,7 +92,6 @@ const Login = () => {
             </form>
         </div>
     );
-}
-
+};
 
 export default Login;
