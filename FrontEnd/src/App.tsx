@@ -11,6 +11,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from './state/store'; // Pastikan import AppDispatch dari store
 import { fetchMenuAccessByRoleId } from './state/counter/counterSlice';
 import CircularProgress from '@mui/material/CircularProgress'; // Import CircularProgress for loading indicator
+import ManageTransactions from './component/page/manageTransaction';
+import TransactionList from './component/page/transactionList';
 
 function App() {
   const dispatch: AppDispatch = useDispatch(); // Use the correct dispatch type
@@ -35,7 +37,7 @@ function App() {
   return (
     <Router>
       <div className="App" style={{ display: 'flex' }}>
-        {isAuthenticated && menuAccess.length > 0 && <Sidebar />}
+        {isAuthenticated && menuAccess.length > 0}
         <div style={{ flexGrow: 1 }}>
           <Navbar />
           <main style={{ minHeight: 'calc(100vh - 120px)', padding: '20px' }}>
@@ -47,9 +49,12 @@ function App() {
               <Login />
             ) : (
               <>
-                {menuAccess.some((menu) => menu.menuname === 'Products') && <Product />}
-                {menuAccess.some((menu) => menu.menuname === 'Product Category') && <ProductCategory />}
-                {menuAccess.some((menu) => menu.menuname === 'Product Variant') && <ProductVariant />}
+                {menuAccess.some((menu) => menu.menu_name === 'Products') && <Product />}
+                {menuAccess.some((menu) => menu.menu_name === 'Product Category') && <ProductCategory />}
+                {menuAccess.some((menu) => menu.menu_name === 'Product Variant') && <ProductVariant />}
+                {menuAccess.some((menu) => menu.menu_name === 'Manage Transaction') && <ManageTransactions />}
+                {menuAccess.some((menu) => menu.menu_name === 'Transaction') && <TransactionList />}
+
               </>
             )}
           </main>

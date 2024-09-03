@@ -6,6 +6,8 @@ using backend.MenuModule.Repository;
 using backend.ProductCategoryModule.Repository;
 using backend.ProductModule.Repository;
 using backend.ProductVariantModule.Repository;
+using backend.TransactionDetailModule.Repository;
+using backend.TransactionModule.Repository;
 using backend.UserModule.Model;
 using backend.UserModule.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +36,8 @@ builder.Services.AddScoped<IProductVariantRepository, ProductVariantRepository>(
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IMenuRepository, MenuRepository>();
 builder.Services.AddScoped<IMenuAccessRepository, MenuAccessRepository>();
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+builder.Services.AddScoped<ITransactionDetailRepository, TransactionDetailRepository>();
 
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));

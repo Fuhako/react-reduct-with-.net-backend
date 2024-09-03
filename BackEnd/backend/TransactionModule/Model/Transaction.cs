@@ -1,17 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace backend.MenuAccessModule.Model
+namespace backend.TransactionModule.Model
 {
-    [Table("m_menu_access")]
-    public class MenuAccess
+    [Table("m_transaction")]
+    public class Transaction
     {
         [Key]
         public long id { get; set; }
-        public long menu_id { get; set; }
-        public string menu_name { get; set; }
-        public long role_id { get; set; }
-        public bool active { get; set; } = true;
+        public string transaction_no { get; set; } = "";
+        public decimal total_amount { get; set; } = 0;
+        public  bool active { get; set; } = true;
         public string created_user { get; set; } = "";
         public DateTime created_date { get; set; }
         public string updated_user { get; set; } = "";

@@ -5,6 +5,8 @@ using backend.ProductVariantModule.Model;
 using backend.UserModule.Model;
 using backend.MenuModule.Model;
 using backend.MenuAccessModule.Model;
+using backend.TransactionModule.Model;
+using backend.TransactionDetailModule.Model;
 namespace backend.Context
 {
     public class ApplicationDbContext : DbContext
@@ -20,6 +22,8 @@ namespace backend.Context
         public DbSet<User> User { get; set; }
         public DbSet<Menu> Menu { get; set; }
         public DbSet<MenuAccess> MenuAccess { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<TransactionDetail> TransactionDetails { get; set; }
 
 
     }

@@ -37,6 +37,8 @@ export interface User {
 export interface Menu {
     id: number;
     name: string;
+    iconName: string;
+    path: string;
     active: boolean;
     created_user: string;
     // Tambahkan field lain jika diperlukan
@@ -45,7 +47,7 @@ export interface Menu {
 export interface MenuAccess {
     id: number;
     menu_id: number;
-    menuname: string;
+    menu_name: string;
     role_id: number;
     active: boolean;
     created_user: string;
@@ -59,11 +61,32 @@ interface CounterState {
     products: Product[];
     productCategory: ProductCategory[];
     productVariant: ProductVariant[];
+    Menu: Menu[];
     menuAccess: MenuAccess[];
     menuAccessByRoleId: MenuAccess[]; // Tambahkan properti menuAccessByRoleId
+    manageTransactions: Transaction[];
+    transactions: TransactionDetail[];
     isLoading: boolean;
     error: string | null;
     user: string | null; // Simpan token pengguna
+}
+
+interface Transaction {
+    id: number;
+    transaction_no: string;
+    total_amount: number;
+    active: boolean;
+    created_date: string;
+    created_user: string;
+}
+
+interface TransactionDetail {
+    transactionId: number;
+    transactionNo: string;
+    category: string;
+    productName: string;
+    qty: number;
+    subtotal: number;
 }
 
 const initialState: CounterState = {
@@ -73,12 +96,16 @@ const initialState: CounterState = {
     products: [],
     productCategory: [],
     productVariant: [],
+    Menu: [],
     menuAccess: [],
     menuAccessByRoleId: [],
+    manageTransactions: [],
+    transactions: [],
     isLoading: false,
     error: null,
     user: null,
 };
+
 
 const configureSlice = createSlice({
     name: "counter",
@@ -181,6 +208,21 @@ const configureSlice = createSlice({
             })
             //#endregion ProductCategory
 
+            //#region Menu
+            .addCase(fetchMenu.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(fetchMenu.fulfilled, (state, action) => {
+                state.Menu = action.payload;
+                state.isLoading = false;
+            })
+            .addCase(fetchMenu.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message || 'Failed to fetch transactions';
+            })
+            //#endregion Menu
+
             //#region MenuAccess
             .addCase(fetchMenuAccess.pending, (state) => {
                 state.isLoading = true;
@@ -194,7 +236,37 @@ const configureSlice = createSlice({
                 state.menuAccessByRoleId = action.payload;
             })
             //#endregion MenuAccess
-            ;
+
+            //#region ManageTransaction
+            .addCase(fetchTransactions.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(fetchTransactions.fulfilled, (state, action) => {
+                state.manageTransactions = action.payload;
+                state.isLoading = false;
+            })
+            .addCase(fetchTransactions.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message || 'Failed to fetch transactions';
+            })
+            //#endregion ManageTransaction
+
+            //#region Transaction
+            .addCase(fetchTransactionsDetail.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(fetchTransactionsDetail.fulfilled, (state, action) => {
+                state.transactions = action.payload;
+                state.isLoading = false;
+            })
+            .addCase(fetchTransactionsDetail.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.error.message || 'Failed to fetch transactions';
+            });
+        //#endregion Transaction
+        ;
     },
 });
 
@@ -289,6 +361,13 @@ export const deleteProductVariant = createAsyncThunk('productVariant/deleteProdu
 });
 //#endregion ProductVariant
 
+//#region Menu
+export const fetchMenu = createAsyncThunk('menu/fetchMenu', async () => {
+    const response = await axios.get<Menu[]>('https://localhost:7073/api/Menu/GetMenu');
+    return response.data;
+});
+//#endregion Menu
+
 //#region MenuAccess
 export const fetchMenuAccess = createAsyncThunk('menuAccess/fetchMenuAccess', async () => {
     const response = await axios.get<MenuAccess[]>('https://localhost:7073/api/MenuAccess/GetMenuAccess');
@@ -298,10 +377,23 @@ export const fetchMenuAccess = createAsyncThunk('menuAccess/fetchMenuAccess', as
 export const fetchMenuAccessByRoleId = createAsyncThunk('menuAccess/fetchMenuAccessByRoleId', async (roleId: number) => {
     console.log(roleId, 'roleId in fetchMenuAccessByRoleId');
     const response = await axios.get<MenuAccess[]>(`https://localhost:7073/api/MenuAccess/GetMenuAccessByRoleId?roleid=${roleId}`);
+    console.log(response.data, 'response.data in fetchMenuAccessByRoleId');
     return response.data;
 });
 //#endregion MenuAccess
 
+//#region transaction
+export const fetchTransactions = createAsyncThunk('transaction/fetchTransactions', async () => {
+    const response = await axios.get<Transaction[]>('https://localhost:7073/api/Transaction/GetTransaction');
+    return response.data;
+});
+
+export const fetchTransactionsDetail = createAsyncThunk('transactions/fetchTransactionsDetail', async () => {
+    const response = await axios.get<TransactionDetail[]>('https://localhost:7073/api/TransactionDetail/GetTransactionDetail'); // Update with the correct endpoint
+    return response.data;
+});
+
+//#endregion transaction
 export const { login, logout, setAutenticated, startLoading, stopLoading, toggleActive, toggleActiveCategory, toggleActiveVariant } = configureSlice.actions;
 
 export default configureSlice.reducer;

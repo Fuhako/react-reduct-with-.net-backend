@@ -62,6 +62,7 @@ CREATE TABLE m_menu
 (
 	id BIGINT IDENTITY(1,1) not null,
 	name NVARCHAR(20),
+	path NVARCHAR(50),
 	active bit,
     created_user NVARCHAR(50),
     created_date DATETIME2,
@@ -92,7 +93,6 @@ CREATE TABLE m_transaction
     updated_user NVARCHAR(50),
     updated_date DATETIME2
 )
-
 CREATE TABLE m_transaction_detail
 (
 	id BIGINT IDENTITY(1,1) not null,

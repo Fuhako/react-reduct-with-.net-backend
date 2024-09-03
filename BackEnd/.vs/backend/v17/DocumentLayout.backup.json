@@ -3,6 +3,70 @@
   "WorkspaceRootPath": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactiondetailmodule\\model\\transactiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactiondetailmodule\\model\\transactiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactiondetailmodule\\repository\\transactiondetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactiondetailmodule\\repository\\transactiondetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactiondetailmodule\\model\\transactiondetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactiondetailmodule\\model\\transactiondetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactiondetailmodule\\repository\\itransactiondetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactiondetailmodule\\repository\\itransactiondetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productvariantmodule\\controller\\productvariantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productvariantmodule\\controller\\productvariantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productmodule\\controller\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productmodule\\controller\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productcategorymodule\\controller\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productcategorymodule\\controller\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactiondetailmodule\\controller\\transactiondetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactiondetailmodule\\controller\\transactiondetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactionmodule\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactionmodule\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactionmodule\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactionmodule\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactionmodule\\controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactionmodule\\controller\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\menuaccessmodule\\model\\menuaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\menuaccessmodule\\model\\menuaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\transactionmodule\\repository\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\transactionmodule\\repository\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productmodule\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productmodule\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\menuaccessmodule\\repository\\menuaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\menuaccessmodule\\repository\\menuaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +79,8 @@
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\menuaccessmodule\\repository\\imenuaccessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productvariantmodule\\controller\\productvariantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productvariantmodule\\controller\\productvariantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\menuaccessmodule\\model\\menuaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\menuaccessmodule\\model\\menuaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\authrmodule\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\authrmodule\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\usermodule\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\menumodule\\controller\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productmodule\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productmodule\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,14 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productmodule\\controller\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productmodule\\controller\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productcategorymodule\\controller\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productcategorymodule\\controller\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\usermodule\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productvariantmodule\\repository\\iproductvariantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productmodule\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productmodule\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|d:\\fileku\\cari kerja\\dikshatek\\technical test\\jawaban\\git\\react-reduct-with-.net-backend\\backend\\backend\\productcategorymodule\\model\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA5EC0D-3205-4F50-BB8C-33FEBC6EF8F2}|backend\\backend.csproj|solutionrelative:backend\\productcategorymodule\\model\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\AuthrModule\\Controller\\AuthController.cs",
               "RelativeDocumentMoniker": "backend\\AuthrModule\\Controller\\AuthController.cs",
@@ -139,18 +175,17 @@
               "ViewState": "AgIAAFMAAAAAAAAAAAAiwG0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T15:53:40.828Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Controller\\ProductController.cs",
               "RelativeDocumentMoniker": "backend\\ProductModule\\Controller\\ProductController.cs",
               "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Controller\\ProductController.cs",
               "RelativeToolTip": "backend\\ProductModule\\Controller\\ProductController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAuwCgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T12:17:04.121Z",
               "IsPinned": true,
@@ -158,20 +193,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "ProductCategoryController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductCategoryModule\\Controller\\ProductCategoryController.cs",
               "RelativeDocumentMoniker": "backend\\ProductCategoryModule\\Controller\\ProductCategoryController.cs",
               "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductCategoryModule\\Controller\\ProductCategoryController.cs",
               "RelativeToolTip": "backend\\ProductCategoryModule\\Controller\\ProductCategoryController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwFEAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T12:11:07.697Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductVariantController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductVariantModule\\Controller\\ProductVariantController.cs",
               "RelativeDocumentMoniker": "backend\\ProductVariantModule\\Controller\\ProductVariantController.cs",
@@ -185,7 +221,176 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionDetailDTO.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Model\\TransactionDetailDTO.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionDetailModule\\Model\\TransactionDetailDTO.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Model\\TransactionDetailDTO.cs",
+              "RelativeToolTip": "backend\\TransactionDetailModule\\Model\\TransactionDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T22:58:43.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TransactionDetail.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Model\\TransactionDetail.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionDetailModule\\Model\\TransactionDetail.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Model\\TransactionDetail.cs",
+              "RelativeToolTip": "backend\\TransactionDetailModule\\Model\\TransactionDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:31:48.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionDetailRepository.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Repository\\TransactionDetailRepository.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionDetailModule\\Repository\\TransactionDetailRepository.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Repository\\TransactionDetailRepository.cs",
+              "RelativeToolTip": "backend\\TransactionDetailModule\\Repository\\TransactionDetailRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwBwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:31:14.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITransactionDetailRepository.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Repository\\ITransactionDetailRepository.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionDetailModule\\Repository\\ITransactionDetailRepository.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Repository\\ITransactionDetailRepository.cs",
+              "RelativeToolTip": "backend\\TransactionDetailModule\\Repository\\ITransactionDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:30:44.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "backend\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T20:40:00.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransactionDetailController.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Controller\\TransactionDetailController.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionDetailModule\\Controller\\TransactionDetailController.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionDetailModule\\Controller\\TransactionDetailController.cs",
+              "RelativeToolTip": "backend\\TransactionDetailModule\\Controller\\TransactionDetailController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:29:58.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Model\\Transaction.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionModule\\Model\\Transaction.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Model\\Transaction.cs",
+              "RelativeToolTip": "backend\\TransactionModule\\Model\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:54:06.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Controller\\TransactionController.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionModule\\Controller\\TransactionController.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Controller\\TransactionController.cs",
+              "RelativeToolTip": "backend\\TransactionModule\\Controller\\TransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T21:05:53.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuAccess.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Model\\MenuAccess.cs",
+              "RelativeDocumentMoniker": "backend\\MenuAccessModule\\Model\\MenuAccess.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Model\\MenuAccess.cs",
+              "RelativeToolTip": "backend\\MenuAccessModule\\Model\\MenuAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:28:55.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACcAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T02:54:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Repository\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionModule\\Repository\\TransactionRepository.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Repository\\TransactionRepository.cs",
+              "RelativeToolTip": "backend\\TransactionModule\\Repository\\TransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:55:17.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Repository\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "backend\\TransactionModule\\Repository\\ITransactionRepository.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\TransactionModule\\Repository\\ITransactionRepository.cs",
+              "RelativeToolTip": "backend\\TransactionModule\\Repository\\ITransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T20:54:50.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Model\\Product.cs",
+              "RelativeDocumentMoniker": "backend\\ProductModule\\Model\\Product.cs",
+              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Model\\Product.cs",
+              "RelativeToolTip": "backend\\ProductModule\\Model\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T03:00:33.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "MenuAccessRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Repository\\MenuAccessRepository.cs",
               "RelativeDocumentMoniker": "backend\\MenuAccessModule\\Repository\\MenuAccessRepository.cs",
@@ -198,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "IMenuAccessRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Repository\\IMenuAccessRepository.cs",
               "RelativeDocumentMoniker": "backend\\MenuAccessModule\\Repository\\IMenuAccessRepository.cs",
@@ -206,25 +411,11 @@
               "RelativeToolTip": "backend\\MenuAccessModule\\Repository\\IMenuAccessRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:52:39.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T20:52:39.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACMAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T02:54:37.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "MenuAccessController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Controller\\MenuAccessController.cs",
               "RelativeDocumentMoniker": "backend\\MenuAccessModule\\Controller\\MenuAccessController.cs",
@@ -232,25 +423,11 @@
               "RelativeToolTip": "backend\\MenuAccessModule\\Controller\\MenuAccessController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:41:30.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T20:41:30.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuAccess.cs",
-              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Model\\MenuAccess.cs",
-              "RelativeDocumentMoniker": "backend\\MenuAccessModule\\Model\\MenuAccess.cs",
-              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuAccessModule\\Model\\MenuAccess.cs",
-              "RelativeToolTip": "backend\\MenuAccessModule\\Model\\MenuAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T22:28:55.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 21,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\UserModule\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "backend\\UserModule\\Repository\\UserRepository.cs",
@@ -258,12 +435,11 @@
               "RelativeToolTip": "backend\\UserModule\\Repository\\UserRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAYwBgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T13:00:28.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T13:00:28.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\UserModule\\Model\\User.cs",
               "RelativeDocumentMoniker": "backend\\UserModule\\Model\\User.cs",
@@ -271,12 +447,11 @@
               "RelativeToolTip": "backend\\UserModule\\Model\\User.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T12:58:30.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T12:58:30.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "MenuRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuModule\\Repository\\MenuRepository.cs",
               "RelativeDocumentMoniker": "backend\\MenuModule\\Repository\\MenuRepository.cs",
@@ -284,12 +459,11 @@
               "RelativeToolTip": "backend\\MenuModule\\Repository\\MenuRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:37:46.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T20:37:46.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuModule\\Controller\\MenuController.cs",
               "RelativeDocumentMoniker": "backend\\MenuModule\\Controller\\MenuController.cs",
@@ -297,25 +471,11 @@
               "RelativeToolTip": "backend\\MenuModule\\Controller\\MenuController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:36:32.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T20:36:32.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Context\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "backend\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Context\\ApplicationDbContext.cs",
-              "RelativeToolTip": "backend\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:40:00.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\MenuModule\\Model\\Menu.cs",
               "RelativeDocumentMoniker": "backend\\MenuModule\\Model\\Menu.cs",
@@ -323,12 +483,11 @@
               "RelativeToolTip": "backend\\MenuModule\\Model\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:36:47.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T20:36:47.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "backend\\ProductModule\\Repository\\ProductRepository.cs",
@@ -336,12 +495,11 @@
               "RelativeToolTip": "backend\\ProductModule\\Repository\\ProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T12:22:10.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T12:22:10.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "backend\\appsettings.json",
@@ -349,12 +507,11 @@
               "RelativeToolTip": "backend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-01T03:16:54.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T03:16:54.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Helpers\\JwtService.cs",
               "RelativeDocumentMoniker": "backend\\Helpers\\JwtService.cs",
@@ -366,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "Auth.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\AuthrModule\\Model\\Auth.cs",
               "RelativeDocumentMoniker": "backend\\AuthrModule\\Model\\Auth.cs",
@@ -378,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "Encryption.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\Helpers\\Encryption.cs",
               "RelativeDocumentMoniker": "backend\\Helpers\\Encryption.cs",
@@ -390,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\UserModule\\Controller\\UserController.cs",
               "RelativeDocumentMoniker": "backend\\UserModule\\Controller\\UserController.cs",
@@ -402,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 36,
               "Title": "IProductCategoryRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductCategoryModule\\Repository\\IProductCategoryRepository.cs",
               "RelativeDocumentMoniker": "backend\\ProductCategoryModule\\Repository\\IProductCategoryRepository.cs",
@@ -414,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "ProductVariantRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductVariantModule\\Repository\\ProductVariantRepository.cs",
               "RelativeDocumentMoniker": "backend\\ProductVariantModule\\Repository\\ProductVariantRepository.cs",
@@ -426,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "ProductCategoryRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductCategoryModule\\Repository\\ProductCategoryRepository.cs",
               "RelativeDocumentMoniker": "backend\\ProductCategoryModule\\Repository\\ProductCategoryRepository.cs",
@@ -438,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "ProductVariant.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductVariantModule\\Model\\ProductVariant.cs",
               "RelativeDocumentMoniker": "backend\\ProductVariantModule\\Model\\ProductVariant.cs",
@@ -450,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "IProductVariantRepository.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductVariantModule\\Repository\\IProductVariantRepository.cs",
               "RelativeDocumentMoniker": "backend\\ProductVariantModule\\Repository\\IProductVariantRepository.cs",
@@ -462,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "ProductCategory.cs",
               "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductCategoryModule\\Model\\ProductCategory.cs",
               "RelativeDocumentMoniker": "backend\\ProductCategoryModule\\Model\\ProductCategory.cs",
@@ -471,18 +628,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T03:33:23.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Model\\Product.cs",
-              "RelativeDocumentMoniker": "backend\\ProductModule\\Model\\Product.cs",
-              "ToolTip": "D:\\Fileku\\Cari Kerja\\Dikshatek\\Technical Test\\Jawaban\\GIT\\react-reduct-with-.net-backend\\BackEnd\\backend\\ProductModule\\Model\\Product.cs",
-              "RelativeToolTip": "backend\\ProductModule\\Model\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T03:00:33.145Z"
             }
           ]
         }
